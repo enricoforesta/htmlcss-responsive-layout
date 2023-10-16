@@ -37,6 +37,14 @@ h2 {
     background-color: yellowgreen;
 }
 
+.debug .titolo {
+    background-color: yellow;
+}
+
+.debug .find-me {
+    background-color: green;
+    height: 220px;
+}
 
 /* /DEBUG */
 
@@ -93,7 +101,7 @@ nav {
 
 
 /* SEZIONE 4  */
-.benefits{
+.benefits {
     background-color: #9792e4
 }
 
@@ -145,9 +153,18 @@ RESPONSIVITA
     }
 
     /* /SEZIONE 4  */
+    /* SEZIONE 5 */
+    .about-us .p30 {
+        display: flex;
+    }
 
+    .about-us .p30 .titolo {
+        width: 70%;
+    }
 
-
+    .about-us .p30 .find-me {
+        width: 30%;
+    }
 }
 
 
