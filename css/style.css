@@ -1,10 +1,10 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
@@ -13,45 +13,89 @@
 
 
 /* DEBUG */
-.debug header{
+.debug header {
     height: 75px;
 }
 
-.debug .box{
+.debug .box {
     height: 305px;
 }
-.debug .toto{
+
+.debug .wh65 {
     height: 610px;
 }
+
 /* /DEBUG */
 
 /* HEADER */
-header{
+header {
     background-color: #0084fd;
     color: white;
 }
-nav{
+
+nav {
     justify-content: space-between;
     padding: 30px;
 }
 
 /* /HEADER */
+
 /* MAIN */
-main{
-    padding:30px;
+/* SEZIONE 1 */
+main {
+    padding: 30px;
 }
-.box{
+
+.box {
     background-color: #b5ddff;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
 }
-.demo{
+
+.demo {
     flex-direction: column;
     gap: 25px;
 }
 
-.sotto-box{
+.sotto-box {
     width: 100%;
 }
 
+/* /SEZIONE 1 */
+
+@media screen and (min-width: 768px) {
+
+    /* SEZIONE 1 */
+    .demo {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: calc((100% - 50px) / 3);
+    }
+
+    .wh65 {
+        width: 65%;
+    }
+
+    .debug .wh65 {
+        height: 305px;
+    }
+
+    /* /SEZIONE 1 */
+
+}
+
+@media screen and (min-width: 992px) {
+
+    /* SEZIONE 1 */
+    nav,
+    .demo {
+        max-width: 992px;
+        margin: 0 auto;
+    }
+
+    /* /SEZIONE 1 */
+}
