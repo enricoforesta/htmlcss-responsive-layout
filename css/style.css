@@ -8,8 +8,12 @@
     display: flex;
 }
 
-.p30{
+.p30 {
     padding: 30px;
+}
+
+h2 {
+    margin: 50px 0;
 }
 
 /* MOBILE 480PX */
@@ -27,7 +31,8 @@
 .debug .wh65 {
     height: 610px;
 }
-.debug .strategic div{
+
+.debug .strategic div {
     height: 400px;
     background-color: yellowgreen;
 }
@@ -43,7 +48,6 @@ header {
 
 nav {
     justify-content: space-between;
-    padding: 30px;
 }
 
 /* /HEADER */
@@ -55,27 +59,51 @@ nav {
     background-color: #b5ddff;
     flex-wrap: wrap;
     text-align: center;
+    border-radius: 3.125rem;
 }
 
 .demo {
     flex-direction: column;
-    gap: 25px;
+    gap: 1.5625rem;
 }
 
 .sotto-box {
     width: 100%;
 }
 
-/* /SEZIONE 1 */ 
+/* /SEZIONE 1 */
 
 /* SEZIONE 2 */
-    .strategic{
-        background-color: #9792e4;
-        flex-direction: column;
-        gap: 25px;
-        text-align: center;
-        color: white;
-    }
+.strategic {
+    background-color: #9792e4;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+    color: white;
+}
+
+/* /SEZIONE 2 */
+/* SEZIONE 3 */
+.testimonials {
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* /SEZIONE 3 */
+
+
+/* SEZIONE 4  */
+.benefits{
+    background-color: #9792e4
+}
+
+/* /SEZIONE 4  */
+
+
+/* 
+**************************
+RESPONSIVITA
+************************ */
 
 
 @media screen and (min-width: 768px) {
@@ -98,27 +126,59 @@ nav {
         height: 305px;
     }
 
-    /* /SEZIONE 2 */
+    /* /SEZIONE 1 */
+    /* SEZIONE 3  */
+
+    section.p30 .testimonials .demo {
+        flex-direction: column;
+    }
+
+    section.p30 .testimonials .demo .box {
+        flex-wrap: nowrap;
+        width: 100%;
+    }
+
+    /* /SEZIONE 3  */
+    /* SEZIONE 4  */
+    .benefits .box {
+        width: calc((100% - 50px) / 2);
+    }
+
+    /* /SEZIONE 4  */
+
+
 
 }
+
+
 
 @media screen and (min-width: 992px) {
 
     /* SEZIONE 1 */
     nav,
-    .demo{
+    .demo,
+    .benefits {
         max-width: 992px;
         margin: 0 auto;
     }
-    .box.wh65{
+
+    .box.wh65 {
         flex-wrap: nowrap;
     }
+
     /* /SEZIONE 1 */
     /* SEZIONE 2 */
-    .strategic{
+    .strategic {
         flex-direction: row;
         justify-content: center;
     }
-    /* SEZIONE 2 */
+
+    /* /SEZIONE 2 */
+    /* SEZIONE 4  */
+    .benefits .box {
+        width: calc((100% - 50px) / 3);
+    }
+
+    /* /SEZIONE 4  */
 
 }
