@@ -8,6 +8,9 @@
     display: flex;
 }
 
+.p30{
+    padding: 30px;
+}
 
 /* MOBILE 480PX */
 
@@ -24,6 +27,11 @@
 .debug .wh65 {
     height: 610px;
 }
+.debug .strategic div{
+    height: 400px;
+    background-color: yellowgreen;
+}
+
 
 /* /DEBUG */
 
@@ -42,13 +50,9 @@ nav {
 
 /* MAIN */
 /* SEZIONE 1 */
-main {
-    padding: 30px;
-}
 
 .box {
     background-color: #b5ddff;
-    display: flex;
     flex-wrap: wrap;
     text-align: center;
 }
@@ -62,7 +66,17 @@ main {
     width: 100%;
 }
 
-/* /SEZIONE 1 */
+/* /SEZIONE 1 */ 
+
+/* SEZIONE 2 */
+    .strategic{
+        background-color: #9792e4;
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+        color: white;
+    }
+
 
 @media screen and (min-width: 768px) {
 
@@ -84,7 +98,7 @@ main {
         height: 305px;
     }
 
-    /* /SEZIONE 1 */
+    /* /SEZIONE 2 */
 
 }
 
@@ -92,10 +106,19 @@ main {
 
     /* SEZIONE 1 */
     nav,
-    .demo {
+    .demo{
         max-width: 992px;
         margin: 0 auto;
     }
-
+    .box.wh65{
+        flex-wrap: nowrap;
+    }
     /* /SEZIONE 1 */
+    /* SEZIONE 2 */
+    .strategic{
+        flex-direction: row;
+        justify-content: center;
+    }
+    /* SEZIONE 2 */
+
 }
