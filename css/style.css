@@ -3,3 +3,55 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.flex{
+    display: flex;
+}
+
+
+/* MOBILE 480PX */
+
+
+/* DEBUG */
+.debug header{
+    height: 75px;
+}
+
+.debug .box{
+    height: 305px;
+}
+.debug .toto{
+    height: 610px;
+}
+/* /DEBUG */
+
+/* HEADER */
+header{
+    background-color: #0084fd;
+    color: white;
+}
+nav{
+    justify-content: space-between;
+    padding: 30px;
+}
+
+/* /HEADER */
+/* MAIN */
+main{
+    padding:30px;
+}
+.box{
+    background-color: #b5ddff;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.demo{
+    flex-direction: column;
+    gap: 25px;
+}
+
+.sotto-box{
+    width: 100%;
+}
+
