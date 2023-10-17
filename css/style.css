@@ -86,7 +86,6 @@ nav i.fa-solid.fa-bars {
 .testimonials h2 {
     font-size: 48px;
     color: #9792e4;
-    line-height: 2.875rem;
     margin-bottom: 40px;
 }
 
@@ -106,10 +105,10 @@ nav i.fa-solid.fa-bars {
     font-size: 48px;
     text-align: center;
     margin-top: 50px;
-    line-height: 2.875rem;
 }
 
-.benefits .box h2 {
+.benefits .box h2,
+.about-us .titolo h2 {
     font-size: 72px;
     color: #9792e4;
     text-align: start;
@@ -132,14 +131,40 @@ nav i.fa-solid.fa-bars {
 }
 
 /* /SEZIONE 4 */
+/* SEZIONE 5  */
+
+.about-us .titolo p {
+    margin: 70px 0;
+    font-size: 20px;
+}
+
+.about-us .find-me h3 {
+    font-size: 30px;
+    color: #9792e4;
+    margin: 30px 0;
+}
+
+.about-us .find-me button {
+    width: 200px;
+    background-color: #9792e4;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+}
+
+/* /SEZIONE 5  */
 
 
 /* /TYPE */
 /* COMUNI */
 
 body {
-    line-height: 1.875rem;
+    line-height: 2.875rem;
     font-family: 'PT Sans', sans-serif;
+}
+
+body p {
+    line-height: 1.9rem;
 }
 
 .benefits,
@@ -172,18 +197,7 @@ img {
 
 
 /* MOBILE 480PX */
-/* DEBUG */
 
-
-.debug .titolo {
-    background-color: yellow;
-}
-
-.debug .find-me {
-    background-color: green;
-}
-
-/* /DEBUG */
 /* HEADER */
 header {
     background-color: #0084fd;
@@ -266,6 +280,32 @@ nav {
 }
 
 /* /SEZIONE 4  */
+/* SEZIONE 5  */
+
+.about-us {
+    margin: 80px 0;
+}
+
+.about-us .find-me img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.about-us .find-me {
+    position: relative;
+}
+
+.about-us .find-me .fa-solid.fa-quote-left {
+    font-size: 70px;
+    color: #9792e4;
+    position: absolute;
+    top: -20px;
+    right: 50%;
+}
+
+/* /SEZIONE 5  */
+
 
 .get-started {
     text-align: center;
@@ -358,14 +398,20 @@ RESPONSIVITA'
     /* SEZIONE 5 */
     .about-us .p30 {
         display: flex;
+        gap: 90px;
     }
 
     .about-us .p30 .titolo {
-        width: 70%;
+        width: 60%;
     }
 
     .about-us .p30 .find-me {
-        width: 30%;
+        width: 40%;
+    }
+
+    .about-us .find-me .fa-solid.fa-quote-left {
+
+        right: 1.25rem;
     }
 
     /* /SEZIONE 5 */
@@ -420,6 +466,14 @@ RESPONSIVITA'
     }
 
     /* /SEZIONE 4  */
+    /* SEZIONE 5 */
+
+    .about-us .find-me .fa-solid.fa-quote-left {
+
+        right: 140px;
+    }
+
+    /* /SEZIONE 5 */
 
 }
 
