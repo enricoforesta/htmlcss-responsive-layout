@@ -35,20 +35,7 @@ button {
 
 /* MOBILE 480PX */
 /* DEBUG */
-.debug header {
-    height: 75px;
-}
-
-.debug .box {
-    height: 305px;
-}
-
-.debug .wh65 {
-    height: 610px;
-}
-
 .debug .strategic div {
-    height: 400px;
     background-color: yellowgreen;
 }
 
@@ -58,7 +45,6 @@ button {
 
 .debug .find-me {
     background-color: green;
-    height: 220px;
 }
 /* /DEBUG */
 /* HEADER */
@@ -71,6 +57,9 @@ nav {
     justify-content: space-between;
 }
 
+nav i.fa-solid.fa-bars {
+    font-size: 35px;
+}
 /* /HEADER */
 /* MAIN */
 
@@ -143,7 +132,17 @@ RESPONSIVITA'
 ************************ */
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {    
+    /* contenitore per una dimensione massima centrata */
+    nav,
+    .demo,
+    .benefits .p30,
+    .about-us,
+    .get-started .p30,
+    footer .p30 {
+        max-width: 720px;
+        margin: 0 auto;
+    }
 
     /* SEZIONE 1 */
     .demo {
@@ -159,9 +158,6 @@ RESPONSIVITA'
         width: 65%;
     }
 
-    .debug .wh65 {
-        height: 305px;
-    }
 
     /* /SEZIONE 1 */
     /* SEZIONE 3  */
@@ -233,4 +229,17 @@ RESPONSIVITA'
 
     /* /SEZIONE 4  */
 
+}
+
+@media screen and (min-width: 1200px) {    
+    /* contenitore per una dimensione massima centrata */
+    nav,
+    .demo,
+    .benefits .p30,
+    .about-us,
+    .get-started .p30,
+    footer .p30 {
+        max-width: 1140px;
+        margin: 0 auto;
+    }
 }
