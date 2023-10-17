@@ -10,84 +10,108 @@
 nav i.fa-solid.fa-bars {
     font-size: 35px;
 }
+
 /* /HEADER */
 
 /* BOX WH65 */
-.wh65{
-    text-align: start;
-}
-.demo .wh65 .sotto-box button span{
+
+.demo .wh65 .sotto-box button span {
     margin-left: 20px;
 }
 
-.demo .wh65 .sotto-box button{
+.demo .wh65 .sotto-box button {
     background-color: #0084fd;
     color: white;
     border-radius: 50px;
     padding: 10px 50px;
 }
 
-.demo .wh65 .sotto-box img{
-    margin-bottom: -30px ;
+.demo .wh65 .sotto-box img {
+    margin-bottom: -30px;
 }
 
 /* /BOX WH65 */
 
 /* SEZIONE 1 */
-.demo .sotto-box p{
+.demo.flex.p30 .sotto-box p {
     font-size: 1.125rem;
     font-weight: bold;
     margin: 40px 0;
 }
 
-.demo .sotto-box h2,
-.demo .wh35.sotto-box i{
+.demo.flex.p30 .sotto-box h2,
+.demo.flex.p30 .wh35.sotto-box i {
     color: #0084fd;
 }
 
-.demo .wh35.sotto-box i{
+.demo.flex.p30 .wh35.sotto-box i {
     font-size: 80px;
     margin-bottom: 20px;
 }
+
 /* /SEZIONE 1 */
 
 /* SEZIONE 2 */
-.strategic h2{
+.strategic h2 {
     font-size: 34px;
     margin: 60px 0;
 }
 
-.strategic .box h3{
+.strategic .box h3 {
     font-size: 24px;
 }
 
-.strategic .box p{
+.strategic .box p {
     font-size: 18px;
     font-style: italic;
     margin: 40px 0;
 }
 
-.strategic .box button{
+.strategic .box button {
     font-size: 24px;
     background-color: #9792e4;
     margin: 0 auto;
     padding: 14px 20px;
     border-radius: 100%;
 }
+
 /* /SEZIONE 2 */
 
+/* SEZIONE 3 */
+.testimonials p {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.testimonials h2 {
+    font-size: 48px;
+    color: #9792e4;
+    line-height: 2.875rem;
+    margin-bottom: 40px;
+}
+
+.testimonials .box i{
+    font-size: 25px;
+    margin: 10px;
+}
+
+.testimonials .box .sotto-box p{
+    font-size: 20px;
+}
+/* /SEZIONE 3 */
 
 /* /TYPE */
-/* COMUNI */ 
+/* COMUNI */
 
-body{
+body {
     line-height: 1.875rem;
     font-family: 'PT Sans', sans-serif;
 }
 
 .benefits,
 .get-started,
-.strategic {
+.strategic,
+.testimonials .box {
     background-color: #9792e4
 }
 
@@ -104,10 +128,12 @@ button {
 .p30 {
     padding: 30px;
 }
-img{
+
+img {
     width: 100%;
     display: block;
 }
+
 /* /COMUNI */
 
 
@@ -122,6 +148,7 @@ img{
 .debug .find-me {
     background-color: green;
 }
+
 /* /DEBUG */
 /* HEADER */
 header {
@@ -156,6 +183,9 @@ nav {
 
 }
 
+.wh65 {
+    text-align: start;
+}
 /* /SEZIONE 1 */
 /* SEZIONE 2 */
 .strategic .p30.flex {
@@ -164,7 +194,7 @@ nav {
     color: white;
 }
 
-.strategic .box{
+.strategic .box {
     background-color: white;
     color: black;
 }
@@ -173,12 +203,21 @@ nav {
 /* SEZIONE 3 */
 .testimonials .p30 {
     text-align: center;
-    padding: 50px 0;
+    padding: 50px 30px;
 }
 
-.testimonials .p30 p {
-    margin-bottom: 50px;
+.testimonials .box img{
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+
 }
+
+.testimonials .box .sotto-box{
+    color: white;
+}
+
 
 /* /SEZIONE 3 */
 /* SEZIONE 4  */
@@ -211,7 +250,8 @@ RESPONSIVITA'
 ************************ */
 
 
-@media screen and (min-width: 768px) {    
+@media screen and (min-width: 768px) {
+
     /* contenitore per una dimensione massima centrata */
     nav,
     .demo,
@@ -242,19 +282,24 @@ RESPONSIVITA'
     /* /SEZIONE 1 */
     /* SEZIONE 2 */
 
-    .strategic .box{
+    .strategic .box {
         width: 100%;
     }
 
     /* /SEZIONE 2 */
     /* SEZIONE 3  */
-    .testimonials .p30 .demo {
+    .testimonials .p30 {
         flex-direction: column;
     }
 
-    .testimonials .p30 .demo .box {
+    .testimonials .p30 .box {
         flex-wrap: nowrap;
         width: 100%;
+        text-align: start;
+    }
+
+    .testimonials .p30 .sotto-box.img{
+        width: 30%;
     }
 
     /* /SEZIONE 3  */
@@ -301,10 +346,11 @@ RESPONSIVITA'
     .box.wh65 {
         flex-wrap: nowrap;
     }
-    
-    .sotto-box.image{
+
+    .sotto-box.image {
         align-self: flex-end;
     }
+
     /* /SEZIONE 1 */
     /* SEZIONE 2 */
     .strategic .p30.flex {
@@ -313,13 +359,14 @@ RESPONSIVITA'
         padding: 30px 140px;
     }
 
-    .strategic .box.p30{
+    .strategic .box.p30 {
         width: 40%;
     }
 
-    .strategic-top{
+    .strategic-top {
         width: 60%;
     }
+
     /* /SEZIONE 2 */
     /* SEZIONE 4  */
     .benefits .box {
@@ -330,7 +377,8 @@ RESPONSIVITA'
 
 }
 
-@media screen and (min-width: 1200px) {    
+@media screen and (min-width: 1200px) {
+
     /* contenitore per una dimensione massima centrata */
     nav,
     .demo,
