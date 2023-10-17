@@ -5,9 +5,7 @@
 }
 
 /* TYPE */
-h2 {
-    margin: 50px 0;
-}
+
 
 /* /TYPE */
 /* COMUNI */
@@ -20,7 +18,6 @@ h2 {
 button {
     all: unset;
     display: block;
-    margin: 0 auto;
 }
 
 .flex {
@@ -29,6 +26,10 @@ button {
 
 .p30 {
     padding: 30px;
+}
+img{
+    width: 100%;
+    display: block;
 }
 /* /COMUNI */
 
@@ -60,6 +61,7 @@ nav {
 nav i.fa-solid.fa-bars {
     font-size: 35px;
 }
+
 /* /HEADER */
 /* MAIN */
 
@@ -67,8 +69,8 @@ nav i.fa-solid.fa-bars {
 
 .box {
     background-color: #b5ddff;
-    flex-wrap: wrap;
     text-align: center;
+    flex-wrap: wrap;
     border-radius: 3.125rem;
 }
 
@@ -79,7 +81,46 @@ nav i.fa-solid.fa-bars {
 
 .sotto-box {
     width: 100%;
+    padding: 30px;
+    line-height: 1.875rem;
 }
+
+.demo .sotto-box p{
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin: 40px 0;
+}
+
+.demo .sotto-box h2,
+.demo .wh35.sotto-box i{
+    color: #0084fd;
+}
+
+.demo .wh35.sotto-box i{
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+
+/* BOX WH65 */
+.wh65{
+    text-align: start;
+}
+.demo .wh65 .sotto-box button span{
+    margin-left: 20px;
+}
+
+.demo .wh65 .sotto-box button{
+    background-color: #0084fd;
+    color: white;
+    border-radius: 50px;
+    padding: 10px 50px;
+}
+
+.demo .wh65 .sotto-box img{
+    margin-bottom: -30px ;
+}
+
+/* /BOX WH65 */
 
 /* /SEZIONE 1 */
 /* SEZIONE 2 */
@@ -213,7 +254,10 @@ RESPONSIVITA'
     .box.wh65 {
         flex-wrap: nowrap;
     }
-
+    
+    .sotto-box.image{
+        align-self: flex-end;
+    }
     /* /SEZIONE 1 */
     /* SEZIONE 2 */
     .strategic {
