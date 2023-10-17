@@ -90,15 +90,49 @@ nav i.fa-solid.fa-bars {
     margin-bottom: 40px;
 }
 
-.testimonials .box i{
+.testimonials .box i {
     font-size: 25px;
     margin: 10px;
 }
 
-.testimonials .box .sotto-box p{
+.testimonials .box .sotto-box p {
     font-size: 20px;
 }
+
 /* /SEZIONE 3 */
+/* SEZIONE 4 */
+.benefits h2 {
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 50px;
+    line-height: 2.875rem;
+}
+
+.benefits .box h2 {
+    font-size: 72px;
+    color: #9792e4;
+    text-align: start;
+}
+
+.benefits .box h3 {
+    font-size: 24px;
+    margin: 40px 0;
+    color: #9792e4;
+}
+
+.benefits .box button {
+    font-size: 16px;
+    background-color: #9792e4;
+    color: white;
+    width: 140px;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+/* /SEZIONE 4 */
+
 
 /* /TYPE */
 /* COMUNI */
@@ -186,6 +220,7 @@ nav {
 .wh65 {
     text-align: start;
 }
+
 /* /SEZIONE 1 */
 /* SEZIONE 2 */
 .strategic .p30.flex {
@@ -203,10 +238,10 @@ nav {
 /* SEZIONE 3 */
 .testimonials .p30 {
     text-align: center;
-    padding: 50px 30px;
+    margin: 50px 0;
 }
 
-.testimonials .box img{
+.testimonials .box img {
     height: 200px;
     width: 200px;
     margin: 0 auto;
@@ -214,19 +249,30 @@ nav {
 
 }
 
-.testimonials .box .sotto-box{
+.testimonials .box .sotto-box {
     color: white;
 }
 
 
 /* /SEZIONE 3 */
 /* SEZIONE 4  */
+.benefits .flex.demo {
+    margin-top: 75px;
+}
+
+.benefits .flex.demo .box {
+    text-align: start;
+    background-color: white;
+}
+
+/* /SEZIONE 4  */
+
 .get-started {
     text-align: center;
     padding: 60px 0;
 }
 
-/* /SEZIONE 4  */
+
 
 /* /MAIN */
 /* FOOTER */
@@ -298,7 +344,7 @@ RESPONSIVITA'
         text-align: start;
     }
 
-    .testimonials .p30 .sotto-box.img{
+    .testimonials .p30 .sotto-box.img {
         width: 30%;
     }
 
