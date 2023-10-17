@@ -6,100 +6,11 @@
 
 /* TYPE */
 
-
-/* /TYPE */
-/* COMUNI */
-.benefits,
-.get-started,
-.strategic {
-    background-color: #9792e4
-}
-
-button {
-    all: unset;
-    display: block;
-}
-
-.flex {
-    display: flex;
-}
-
-.p30 {
-    padding: 30px;
-}
-img{
-    width: 100%;
-    display: block;
-}
-/* /COMUNI */
-
-
-/* MOBILE 480PX */
-/* DEBUG */
-.debug .strategic div {
-    background-color: yellowgreen;
-}
-
-.debug .titolo {
-    background-color: yellow;
-}
-
-.debug .find-me {
-    background-color: green;
-}
-/* /DEBUG */
 /* HEADER */
-header {
-    background-color: #0084fd;
-    color: white;
-}
-
-nav {
-    justify-content: space-between;
-}
-
 nav i.fa-solid.fa-bars {
     font-size: 35px;
 }
-
 /* /HEADER */
-/* MAIN */
-
-/* SEZIONE 1 */
-
-.box {
-    background-color: #b5ddff;
-    text-align: center;
-    flex-wrap: wrap;
-    border-radius: 3.125rem;
-}
-
-.demo {
-    flex-direction: column;
-    gap: 1.5625rem;
-}
-
-.sotto-box {
-    width: 100%;
-    padding: 30px;
-    line-height: 1.875rem;
-}
-
-.demo .sotto-box p{
-    font-size: 1.125rem;
-    font-weight: bold;
-    margin: 40px 0;
-}
-
-.demo .sotto-box h2,
-.demo .wh35.sotto-box i{
-    color: #0084fd;
-}
-
-.demo .wh35.sotto-box i{
-    font-size: 80px;
-    margin-bottom: 20px;
-}
 
 /* BOX WH65 */
 .wh65{
@@ -122,23 +33,150 @@ nav i.fa-solid.fa-bars {
 
 /* /BOX WH65 */
 
+/* SEZIONE 1 */
+.demo .sotto-box p{
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin: 40px 0;
+}
+
+.demo .sotto-box h2,
+.demo .wh35.sotto-box i{
+    color: #0084fd;
+}
+
+.demo .wh35.sotto-box i{
+    font-size: 80px;
+    margin-bottom: 20px;
+}
+/* /SEZIONE 1 */
+
+/* SEZIONE 2 */
+.strategic h2{
+    font-size: 34px;
+    margin: 60px 0;
+}
+
+.strategic .box h3{
+    font-size: 24px;
+}
+
+.strategic .box p{
+    font-size: 18px;
+    font-style: italic;
+    margin: 40px 0;
+}
+
+.strategic .box button{
+    font-size: 24px;
+    background-color: #9792e4;
+    margin: 0 auto;
+    padding: 14px 20px;
+    border-radius: 100%;
+}
+/* /SEZIONE 2 */
+
+
+/* /TYPE */
+/* COMUNI */ 
+
+body{
+    line-height: 1.875rem;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.benefits,
+.get-started,
+.strategic {
+    background-color: #9792e4
+}
+
+button {
+    all: unset;
+    display: block;
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.p30 {
+    padding: 30px;
+}
+img{
+    width: 100%;
+    display: block;
+}
+/* /COMUNI */
+
+
+/* MOBILE 480PX */
+/* DEBUG */
+
+
+.debug .titolo {
+    background-color: yellow;
+}
+
+.debug .find-me {
+    background-color: green;
+}
+/* /DEBUG */
+/* HEADER */
+header {
+    background-color: #0084fd;
+    color: white;
+}
+
+nav {
+    justify-content: space-between;
+}
+
+/* /HEADER */
+/* MAIN */
+
+/* SEZIONE 1 */
+
+.box {
+    background-color: #b5ddff;
+    text-align: center;
+    flex-wrap: wrap;
+    border-radius: 3.125rem;
+}
+
+.demo {
+    flex-direction: column;
+    gap: 1.5625rem;
+}
+
+.sotto-box {
+    width: 100%;
+    padding: 30px;
+
+}
+
 /* /SEZIONE 1 */
 /* SEZIONE 2 */
-.strategic {
+.strategic .p30.flex {
     flex-direction: column;
     gap: 25px;
-    text-align: center;
     color: white;
+}
+
+.strategic .box{
+    background-color: white;
+    color: black;
 }
 
 /* /SEZIONE 2 */
 /* SEZIONE 3 */
-.testimonials {
+.testimonials .p30 {
     text-align: center;
     padding: 50px 0;
 }
 
-.testimonials p {
+.testimonials .p30 p {
     margin-bottom: 50px;
 }
 
@@ -177,6 +215,7 @@ RESPONSIVITA'
     /* contenitore per una dimensione massima centrata */
     nav,
     .demo,
+    .strategic .p30,
     .benefits .p30,
     .about-us,
     .get-started .p30,
@@ -201,12 +240,19 @@ RESPONSIVITA'
 
 
     /* /SEZIONE 1 */
+    /* SEZIONE 2 */
+
+    .strategic .box{
+        width: 100%;
+    }
+
+    /* /SEZIONE 2 */
     /* SEZIONE 3  */
-    section.p30 .testimonials .demo {
+    .testimonials .p30 .demo {
         flex-direction: column;
     }
 
-    section.p30 .testimonials .demo .box {
+    .testimonials .p30 .demo .box {
         flex-wrap: nowrap;
         width: 100%;
     }
@@ -242,6 +288,7 @@ RESPONSIVITA'
     /* contenitore per una dimensione massima centrata */
     nav,
     .demo,
+    .strategic .p30,
     .benefits .p30,
     .about-us,
     .get-started .p30,
@@ -260,11 +307,19 @@ RESPONSIVITA'
     }
     /* /SEZIONE 1 */
     /* SEZIONE 2 */
-    .strategic {
+    .strategic .p30.flex {
         flex-direction: row;
-        justify-content: center;
+        align-items: flex-end;
+        padding: 30px 140px;
     }
 
+    .strategic .box.p30{
+        width: 40%;
+    }
+
+    .strategic-top{
+        width: 60%;
+    }
     /* /SEZIONE 2 */
     /* SEZIONE 4  */
     .benefits .box {
