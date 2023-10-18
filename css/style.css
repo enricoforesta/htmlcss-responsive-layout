@@ -305,6 +305,7 @@ nav {
     width: 200px;
     margin: 0 auto;
     border-radius: 50%;
+    object-fit: cover;
 
 }
 
@@ -458,7 +459,6 @@ RESPONSIVITA'
     }
 
     .about-us .find-me .fa-solid.fa-quote-left {
-
         right: 20px;
     }
 
@@ -542,5 +542,9 @@ RESPONSIVITA'
     .about-us {
         max-width: 1140px;
         margin: 0 auto;
+    }
+
+    .about-us .find-me .fa-solid.fa-quote-left {
+        right: 200px;
     }
 }
